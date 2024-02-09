@@ -9,7 +9,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <h1>Hello From Server!!!</h1>
+    <App />
   </React.StrictMode>
 );
 
