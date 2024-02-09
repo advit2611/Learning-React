@@ -11,6 +11,10 @@ const myTodoItems = [
   {
     id:2,
     title: `I can't wait for new season`
+  },
+  {
+    id:3,
+    title: `I hope new season is great!`
   }
 ]
 
