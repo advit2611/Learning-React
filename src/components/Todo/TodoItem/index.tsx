@@ -6,6 +6,6 @@ interface TodoItemProps {
 }
 
 const TodoItem: React.FC<TodoItemProps> = (props) => {  
-    return <li> {props.title} </li>
+    return (<li> {props.title} </li>)
 }
 export default TodoItem;

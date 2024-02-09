@@ -2,14 +2,21 @@ import React from "react";
 import TodoItem from "./TodoItem";
 import "./style.css";
 
-const Todo: React.FC = () => {
+interface TodoArray {
+  id: number;
+  title: string;
+}
+interface TodoProps {
+  items: TodoArray[];
+}
+
+const Todo: React.FC<TodoProps> = (props) => {
   return (
     <div className="todo-container">
       <ol>
-        <TodoItem title="Hello" />
-        <TodoItem title="I"/>
-        <TodoItem title="Love"/>
-        <TodoItem title="Apex Legends"/>
+        {props.items.map((item) => (
+          <TodoItem key={item.id} title={item.title} />
+        ))}
       </ol>
     </div>
   );
