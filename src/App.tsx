@@ -15,6 +15,10 @@ const myTodoItems = [
   {
     id:3,
     title: `I hope new season is great!!!`
+  },
+  {
+    id:4,
+    title: `I wonder which legend I am going to main next`
   }
 ]
 
