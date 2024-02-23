@@ -1,0 +1,7 @@
+.block-button {
+    border-radius: 10px ;
+    border: 2px solid;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+}

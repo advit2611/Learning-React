@@ -1,0 +1,13 @@
+.counter-container {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+button {
+  border-radius: 10px;
+  margin-left: 10px;
+  border: 1px;
+  padding: 10px 20px;
+  cursor:crosshair;
+}
