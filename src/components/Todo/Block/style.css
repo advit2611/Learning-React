@@ -1,7 +1,18 @@
 .block-button {
-    border-radius: 10px ;
-    border: 2px solid;
-    margin: 5px;
-    justify-content: center;
-    align-items: center;
+  border: 1px solid;
+  width: 20px; /* Set your desired width */
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1px;
+}
+
+.X {
+  background-color: lightseagreen; /* Define your desired color for clicked state */
+  /* Add any other styles for clicked state */
+}
+
+.O{
+    background-color: lightblue;
 }

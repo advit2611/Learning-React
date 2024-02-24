@@ -1,14 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
 
 interface BlockProps {
-  value: String;
+  value: string;
+  onClick?: () => void;
 }
 
 const Block: React.FC<BlockProps> = (props) => {
+
   return (
     <div>
-      <button className="block-button">{props.value}</button>
+      <button
+        onClick={props.onClick}
+        className={`block-button ${props.value ? props.value : ''}`}
+      >
+        {props.value}
+      </button>
     </div>
   );
 };
