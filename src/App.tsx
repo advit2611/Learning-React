@@ -83,7 +83,7 @@ const App: React.FC = () => {
         onClick={(e) => {
           setState(!state);
         }}
-        style={{ background: "Pink", margin: 10 }}
+        style={{ background: "LightPink", margin: 10 }}
       >
         Toggle
       </button>
