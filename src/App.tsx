@@ -3,6 +3,7 @@ import "./App.css";
 import Todo from "./components/Todo";
 import Counter from "./components/Todo/Counter";
 import Block from "./components/Todo/Block";
+import ApiFetch from "./components/Todo/ApiFetch";
 
 const myTodoItems = [
   {
@@ -106,6 +107,9 @@ const App: React.FC = () => {
           <Block onClick={() => handleTurn(7)} value={values[7]} />
           <Block onClick={() => handleTurn(8)} value={values[8]} />
         </div>
+      </div>
+      <div>
+        <ApiFetch />
       </div>
     </div>
   );
