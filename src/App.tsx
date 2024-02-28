@@ -4,6 +4,8 @@ import Todo from "./components/Todo";
 import Counter from "./components/Counter";
 import Block from "./components/Block";
 import ApiFetch from "./components/ApiFetch";
+import { useAppDispatch, useAppSelector } from "./redux/hooks";
+import { decrement, increment } from "./redux/slices/counter";
 
 const myTodoItems = [
   {
@@ -28,6 +30,10 @@ const App: React.FC = () => {
   const [state, setState] = useState<boolean>(true);
   const [values, setValues] = useState(Array(9).fill(null));
   const [currentTurn, setTurn] = useState("X");
+
+  // Learning Redux
+  const count = useAppSelector((state) => state.counter);
+  const dispatch = useAppDispatch();
 
   const checkWinner = () => {
     const winningConditions = [
@@ -108,6 +114,9 @@ const App: React.FC = () => {
           <Block onClick={() => handleTurn(8)} value={values[8]} />
         </div>
       </div>
+      <h1>The Count is {count}</h1>
+      <button onClick={() => dispatch(increment())}> Increment </button>
+      <button onClick={() => dispatch(decrement())}> Decrement </button>
       <div>
         <ApiFetch />
       </div>
