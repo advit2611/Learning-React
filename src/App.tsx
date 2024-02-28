@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import Todo from "./components/Todo";
-import Counter from "./components/Todo/Counter";
-import Block from "./components/Todo/Block";
-import ApiFetch from "./components/Todo/ApiFetch";
+import Counter from "./components/Counter";
+import Block from "./components/Block";
+import ApiFetch from "./components/ApiFetch";
 
 const myTodoItems = [
   {
